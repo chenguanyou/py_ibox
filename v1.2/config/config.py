@@ -5,12 +5,13 @@ import uuid
 success = requests.session()
 
 token = ""
-proxy_ip_type = True  # 是否开启代理ip
+proxy_ip_api = ""  # 代理ip接口
+proxy_ip_type = False  # 是否开启代理ip
 video_type = True  # 成功后是否播放音乐
 video_volume = 80  # 成功后播放音乐的音量
 pay_nft_cache = []  # 存放已经购买过的NFT，避免多次提交封号，封IP(这里不要动，系统会自动放进去)
-min_price_cny = 35  # 金额小于多少进行抢
-work_num = 15  # 每一次请求，线程的数量，默认为2
+min_price_cny = 20  # 金额小于多少进行抢
+work_num = 1  # 每一次请求，线程的数量，默认为2
 
 
 def header(is_login: bool):

@@ -1,10 +1,9 @@
-from config.config import success
+from config.config import success, proxy_ip_api
 
 
 def proxy_ip():
     # 星速云 xingsudaili.com
-    api = "http://user.xingsudaili.com:25434/jeecg-boot/extractIp/s?uid=1500836734514565122&orderNumber=" \
-          "CN2022030723274814&number=1&wt=json&randomFlag=true&detailFlag=true&useTime=60&region="
+    api = proxy_ip_api
     req = success.get(url=api)
     req_json = {'https': 'https://%s' % str(req.json().get("result")[0]).split(',')[0]}
     print("本次代理ip：%s" % req_json)
