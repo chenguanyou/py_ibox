@@ -6,7 +6,6 @@
 ####依赖安装
 ```
 1、安装python3环境后 依次按照，不会安装可以关键字 + 百度
-pip3 install webbrowser
 pip3 install applescript
 pip3 install pygame
 pip3 install requests
