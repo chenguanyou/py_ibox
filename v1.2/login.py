@@ -13,5 +13,5 @@ def login(phone: str, code: str):
 
 
 if __name__ == '__main__':
-    test = login(phone="16619915151", code="885475")
+    test = login(phone="", code="")
     print(test)
